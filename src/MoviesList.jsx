@@ -33,12 +33,14 @@ const MoviesList = () => {
 
     return (
         <div id="movie-type">
-            <h2>Favorite Movies</h2>
-            <p><small>Click Title for Description</small></p>
-            {/* Task 4: Toggling List View */}
-            <button onClick={toggleGenreView}>
-                {showAction ? "Show All Movies" : "Show Action Movies"}
-            </button>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Favorite Movies</h2>
+            <p><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click Title for Description</small></p>
+            {/* /* Task 4: Toggling List View */}
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onClick={toggleGenreView}>
+                    {showAction ? "Show All Movies" : "Show Action Movies"}
+                </button>
+            </div>
             <ul>
                 {movies
                     .filter(movie => !showAction || movie.genre === "Action")

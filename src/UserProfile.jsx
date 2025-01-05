@@ -21,7 +21,9 @@ class UserProfile extends Component {
             <div id="user-profile">
                 <h1>User Profile</h1>
                 <p>Name: {this.state.name}</p>
-                <button onClick={this.changeName}>Change Name</button>
+                <div>
+                    <button onClick={this.changeName}>Change Name</button>
+                </div>
             </div>
         );
     }
